@@ -6,7 +6,7 @@ To run this web application locally you must follow the steps indicated below:
 
 1. Clone this repository
 ```bash
-git clone [repository link]
+git clone https://github.com/leowalker10/notes-app.git
 ```
 
 2. Install dependencies
