@@ -25,4 +25,4 @@ node app
 - pug.js
 
  ### Web application repository on github
- [ link to github repo] 
+ [ link to github repo] (https://github.com/leowalker10/notes-app.git)
