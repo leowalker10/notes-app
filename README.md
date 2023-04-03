@@ -6,7 +6,7 @@ Follow the steps below to run this web application on your own device:
 
 1. Clone this repository
 ```bash
-git clone https://github.com/leowalker10/notes.git
+git clone https://github.com/leowalker10/notes-app.git
 ```
 
 2. Install dependencies
@@ -25,4 +25,4 @@ node app
 - pug.js
 
  ### Web application repository on github
- [link to github repo](https://github.com/leowalker10/notes)
+ [link to github repo](https://github.com/leowalker10/notes-app)
