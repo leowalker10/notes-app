@@ -1,17 +1,17 @@
-# Notes web application
+# Students management system
 
-### This web applicaton allows users to create, edit, delete notes.
+### This application provides for the entry, storage, modification, and deletion of student data.
 
-To run this web application locally you must follow the steps indicated below:
+Follow the steps below to run this web application on your own device:
 
 1. Clone this repository
 ```bash
-git clone https://github.com/leowalker10/notes-app.git
+git clone https://github.com/leowalker10/notes.git
 ```
 
 2. Install dependencies
 ```bash
-cd [project folder]
+cd 14766
 npm install
 ```
 
@@ -25,4 +25,4 @@ node app
 - pug.js
 
  ### Web application repository on github
- [link to github repo](https://github.com/leowalker10/notes-app.git)
+ [link to github repo](https://github.com/leowalker10/notes)

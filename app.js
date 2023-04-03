@@ -8,7 +8,7 @@ app.set('view engine', 'pug')
 app.use('/static', express.static('public'))
 app.use(express.urlencoded({ extended: false }))
 
-// localhost:800
+// localhost:3000
 app.get('/', (req, res) => {
     res.render('home')
 })
@@ -45,6 +45,16 @@ app.post('/create', (req, res) => {
 
 })
 
+app.get('/api/v1/notes', (req,res) => {
+    fs.readFile('./data/notes.json', (err, data) =>{
+        if (err) throw err 
+
+        const notes = JSON.parse(data)
+
+        res.json(notes)
+    })
+})
+
 
 
 app.get('/notes', (req, res) => {
@@ -74,10 +84,30 @@ app.get('/notes/:id', (req, res) => {
     })
 })
 
-app.listen(8000, err => {
+app.get('/:id/delete', (req, res) => {
+    const id = req.params.id
+    console.log('id',id)
+    fs.readFile('./data/notes.json', (err, data) =>{
+        if (err) throw err 
+
+        const notes = JSON.parse(data)
+
+        const filteredNotes = notes.filter(note => note.id != id)
+
+        fs.writeFile('./data/notes.json', JSON.stringify(filteredNotes), err => {
+            if (err) throw err
+
+            res.render('notes', { notes: filteredNotes })
+        })
+
+
+    })
+}) 
+
+app.listen(3000, err => {
     if(err) console.log(err)
 
-    console.log('Server is running on port 8000...')
+    console.log('Listening On Port 3000...')
 })
 
 function id () {

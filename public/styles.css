@@ -1,76 +1,78 @@
 :root {
-    font-size: 18px;
-    color: #444
+    font-size: 20px;
+    color: #000000;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 5;
+    padding: 5;
     box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration: solid;
+    color: rgb(0, 191, 255);
 }
 
 a:hover {
-    color:red;
+    color: rgb(255, 0, 212);
+    border-bottom: .1rem solid rgb(255, 0, 212);
+    padding-bottom: .5rem;
 }
 
 .navbar{
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    border-bottom: 5px dotted #ccc;
-    padding: 10px;
+    border-bottom: 5px dashed #c6c3c3;
+    padding: 5px;
 }
 
 .nav a {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 5px 15px;
 }
 
 /* homepage styles */
 .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 15px;
 }
 
 .intro-msg {
     padding: 100px 0 30px 0;
-    font-size: 2rem;
-    max-width: 60%;
+    font-size: 2.5rem;
+    max-width: 70%;
 }
 
 .featured {
     display: inline-block;
     padding: 10px 20px;
-    background-color: tomato;
+    background-color: rgb(0, 191, 255);
     color: #fff;
 }
 
 /* create page styles */
 .form{
-    max-width: 60%;
+    max-width: 40%;
 }
 
 .input {
     width: 100%;
     display: block;
-    padding: 10px;
-    font-size: 1.3rem;
-    font-family: inherit;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
+    padding: 6px;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px outset #d0d0d0;
+    margin-bottom: 25px;
     }
 
 .btn {
     display: inline-block;
-    background: tomato;
+    background: rgb(0, 191, 255);
     color: #fff;
     font-size: 1.3rem;
     border: none;
@@ -78,9 +80,15 @@ a:hover {
     font-family: inherit;
 }
 
+.btn:hover{
+    letter-spacing: .1rem;
+    color: #fff;
+    border-bottom: none;
+}
+
 /* note list page styles */
 .note-wrapper {
-    max-width: 60%;
+    max-width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,28 +97,40 @@ a:hover {
 }
 
 .note {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+}
+
+.note:hover {
+    letter-spacing: .1rem;
+    border-bottom: none;
 }
 
 .delete {
     display: inline-block;
-    padding: 5px 10px;
-    background-color: tomato;
+    padding: 2px 8px;
+    background-color: rgb(255, 46, 46);
+    color: rgb(53, 45, 45);
+}
+
+.delete:hover {
     color: #fff;
+    letter-spacing: .1rem;
+    border-bottom: none;
+
 }
 
 .error {
     display: inline-block;
-    padding: 10px;
-    border: 1px solid red;
-    font-size: 1.2rem;
+    padding: 5px;
+    border: 2.5px ridge rgb(122, 10, 10);
+    font-size: 1rem;
     color: red;
 }
 
 .success {
     display: inline-block;
-    padding: 10px;
-    border: 1px solid green;
-    font-size: 1.2rem;
+    padding: 5px;
+    border: 2.5px ridge rgb(0, 255, 0);
+    font-size: 1rem;
     color: green;
 }

@@ -2,19 +2,19 @@ extends layout.pug
 
 block content 
   .container 
-    h1 Create note 
+    h1 Add new student 
 
     if error 
-      p.error Some error accured! Try again!
+      p.error Something went wrong! Try again!
 
     if success 
-      p.success Note is created!
+      p.success Student is saved!
 
     form.form(action="/create" method='POST') 
-      label Title 
-      input.input(type="text" name='title')
+      label Full name 
+      input.input(type="text" placeholder="write your full name here..." name='title')
 
-      label Description 
-      textarea.input(type="text" name="description")
+      label Information 
+      textarea.input(type="text" placeholder="write brief information about you...(age, school, interests etc.)" name="description")
 
-      button.btn Create note  
+      button.btn Add as a student  
